@@ -1,10 +1,32 @@
 import React from 'react';
 
+import { images } from '../../constants';
 import './AboutUs.css';
 
 const AboutUs = () => (
-  <div>
-    AboutUs
+  <div className='app__aboutus app__bg flex__center section__padding' id='about'>
+    <div className='app__aboutus-overlay flex__center'>
+      <img src={images.G} alt="g letter" />
+    </div>
+
+    <div className='app__aboutus-content flex__center'>
+      <div className='app__aboutus-content_about'>
+        <h1 className='headtext__cormorant'>About Us</h1>
+        <img src={images.spoon}  alt="about__spoon" className='spoon_img' />
+        <p className='p__opensans'>Indulge your senses in a symphony of flavors, where locally sourced ingredients are transformed into culinary wonders that push the boundaries of taste</p>
+        <button type='button' className='custom__button'>Know More</button>
+      </div>
+      <div className='app__aboutus-content_knife flex__center'>
+        <img src={images.knife} alt="about_knife" />
+      </div>
+      <div className='app__aboutus-content_history'>
+        <h1 className='headtext__cormorant'>Our History</h1>
+        <img src={images.spoon}  alt="about__spoon" className='spoon_img' />
+        <p className='p__opensans'>From our succulent seafood delicacies that transport you to the coastal shores to our tender cuts of prime meat that melt in your mouth, every bite tells a story of culinary excellence.</p>
+        <button type='button' className='custom__button'>Know More</button>
+      </div>
+    </div>
+
   </div>
 );
 
